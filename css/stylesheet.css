@@ -1,0 +1,53 @@
+/* stylesheet.cs*/
+
+
+body{
+font-family:    arial, Helvetica, sans-serif;
+background:     none;
+margin:         0;
+padding:        0;    
+    }
+    
+/* -----CONTENT -----*/
+
+#loginCOntent
+{
+width:          auto;
+height:         auto;
+background:     #fff;
+margin:         0 auto;
+padding:        0;
+display:        block;
+}
+
+/* -----FORM -----*/
+
+#myForm
+{
+Width:          450px;
+height:         auto;
+background:     #999;
+margin:         0 auto;
+padding:    10px;
+}
+    
+/* -----FOOTER -----*/
+
+#footer
+{
+background:     none repeat scroll 0 0 #000;
+color:          #fff;
+display:        block;
+height:         18px;
+line-height:    0;
+margin:         0 auto;
+padding:        5px;
+text-align:     center;
+width:          460px;
+
+#footer p
+{
+text-align:     center;
+color:          #fff;
+}
+
