@@ -3,9 +3,9 @@
 
 body{
 font-family:    arial, Helvetica, sans-serif;
-background:     none;
-margin:         0;
-padding:        0;    
+background:     #3399dd;
+padding:        0;
+color:          #cccccc;
     }
     
 /* -----CONTENT -----*/
@@ -14,8 +14,7 @@ padding:        0;
 {
 width:          auto;
 height:         auto;
-background:     #fff;
-margin:         0 auto;
+margin:         70px 0 0;
 padding:        0;
 display:        block;
 }
@@ -25,29 +24,40 @@ display:        block;
 #myForm
 {
 Width:          450px;
-height:         auto;
-background:     #999;
+height:         265px;
+background:     #e3dfdf;
+color:           #3399dd;
 margin:         0 auto;
-padding:    10px;
-}
-    
-/* -----FOOTER -----*/
-
-#footer
-{
-background:     none repeat scroll 0 0 #000;
-color:          #fff;
-display:        block;
-height:         18px;
-line-height:    0;
-margin:         0 auto;
-padding:        5px;
-text-align:     center;
-width:          460px;
-
-#footer p
-{
-text-align:     center;
-color:          #fff;
+padding:        10px;
 }
 
+#myForm         h3
+{
+text-align:     center;    
+}
+
+#myForm hr
+{
+color:          #fff;    
+}
+
+#myForm p{margin-bottom:0;}
+
+.inputField{height:20px;  }
+
+.checkButton{float:left;margin-top:20px;}
+
+.submit-text
+{ 
+background:     #000;
+border:         none;
+color:          #ccc;
+height:         33px;
+margin-right:   213px;
+width:          75px;
+}
+
+.lineBttom{}
+.registerTxt1{float:left;font-size: 13px;}
+
+.registerTxt2{float:right;font-size: 13px;}
