@@ -1,3 +1,4 @@
+<?php include_once("connection/db.php");?>
 <!DOCTYPE html>
     <head>
         <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
@@ -23,3 +24,6 @@
         </div>
     </body>
 </html>
+<?php
+mysqli_close($connection);
+?>
