@@ -2,23 +2,23 @@
 <!DOCTYPE html>
     <head>
         <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
-        <title>Welcome to my login page</title>
+        <title>Registration</title>
         <meta charset="utf-8">
     </head>
 
     <body>
        <div id="loginCOntent">
-            <form action="index.php" method="POST" id="myForm">
-                <h3>Sign in</h3>
+            <form action="register-success.php" method="POST" id="myForm">
+                <h3>Registration</h3>
                     <hr/>
                         <label for="username">Username</label><br/>
                         <input type="text" name="username"    class="inputField"><br/>
                         <label for="password">Password</label><br/>
-                        <input type="password" name="password" class="inputField"><br/><br/>   
-                        <input type="submit" value="Login" class="submit-text"><br/>                   
+                        <input type="password" name="password" class="inputField"><br/>
+                        <label for="username">E-mail</label><br/>
+                        <input type="text" name="email"    class="inputField"><br/><br/>
+                        <input type="submit" value="Register" class="submit-text"><br/>                   
                         <hr/ class="lineBttom">
-                           
-                        <label class="registerTxt1"><a href="register.php">New register?</a></label><label class="registerTxt2"><a href="register.php"> Register now</a></label>
                         
             </form>      
         </div>

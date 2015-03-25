@@ -59,5 +59,6 @@ width:          75px;
 
 .lineBttom{}
 .registerTxt1{float:left;font-size: 13px;}
-
+.registerTxt1 a{color:#3399dd; }
 .registerTxt2{float:right;font-size: 13px;}
+.registerTxt2 a{color:#3399dd; }

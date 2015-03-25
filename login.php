@@ -1,3 +1,13 @@
+<?php
+session_start();
+if(!isset($_SESSION));
+{
+    header("Location:index.php");
+}
+         
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -49,8 +59,10 @@
 
     <div class="container">
 
+
       <div class="starter-template">
-        <h1>Welcome to Onekblog</h1>
+       <h1>Welcome to Onekblog</h1>
+     
         <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla consectetur, nulla dictum euismod molestie, nulla dolor elementum tortor, lacinia euismod nisi lorem vel mi. Sed ac libero nunc. Proin elementum quis massa lacinia vestibulum. Vivamus ornare scelerisque arcu. Maecenas finibus velit id iaculis scelerisque. Etiam mauris mauris, tincidunt sed scelerisque vitae, porttitor sit amet justo. In gravida condimentum tellus in molestie. Integer ligula eros, viverra a facilisis eu, rutrum vitae massa.<br> All you get is this text and a mostly barebones HTML document.</p>
       </div>
 
@@ -66,3 +78,7 @@
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
   </body>
 </html>
+<?php
+
+
+?>
