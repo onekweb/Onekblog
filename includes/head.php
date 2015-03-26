@@ -1,6 +1,6 @@
 <!DOCTYPE html>
     <head>
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-        <title>Welcome to my login page</title>
+        <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+        <title>::Blog::</title>
         <meta charset="utf-8">
     </head>

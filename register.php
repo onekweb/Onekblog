@@ -1,14 +1,19 @@
 <?php include_once("connection/db.php");?>
-<!DOCTYPE html>
-    <head>
-        <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
-        <title>Registration</title>
-        <meta charset="utf-8">
-    </head>
-
+<?php include_once("includes/head.php");?>
+<?php 
+if(isset($_POST['username']))
+{
+$username = $_POST['username'];
+$password = $_POST['password'];
+$mail = $_POST['email'];			
+$query = "INSERT INTO users (username, password, mail) VALUES ('$username', '$password', '$mail')";
+$connection->query($query);
+echo "Welcome". $username;
+}
+?>
     <body>
        <div id="loginCOntent">
-            <form action="register-success.php" method="POST" id="myForm">
+            <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST" id="myForm">
                 <h3>Registration</h3>
                     <hr/>
                         <label for="username">Username</label><br/>
@@ -24,6 +29,7 @@
         </div>
     </body>
 </html>
+
 <?php
 mysqli_close($connection);
 ?>
