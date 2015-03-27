@@ -2,13 +2,20 @@
 <?php include_once("includes/head.php");?>
     <body>
        <div id="loginCOntent">
-            <form action="#" method="POST" id="myForm">
+            <form action="#" method="POST" id="myForm1">
                 <h3>Yeahhhhhhhhhhh!</h3>
                     <hr/>
                      	<h4 style="color:#000;">The list of our member..</h4>
                      	<table>
+                     		<?php 
+							$query = "SELECT * FROM users";
+							$result = mysqli_query($connection, $query);
+							if($result->num_rows > 0)
+							{	while($row = $result->fetch_assoc())
+								{
+							?>
                      		<tr>
-                     			<td style="color:#000;">The member will appear here...</td>
+                     			<td style="color:#000;"><?php echo"	". $row['username']."";}}?></td>
                      		</tr>
                      	</table>
                      	                  

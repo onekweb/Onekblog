@@ -1,6 +1,5 @@
 <?php include_once("connection/db.php");?>
 <?php include_once("includes/head.php");?>
-
     <body>
        <div id="loginCOntent">
             <form action="index.php" method="POST" id="myForm">

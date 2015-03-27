@@ -1,9 +1,9 @@
-/* stylesheet.cs*/
-
+/* stylesheet.css*/
+/* #3399dd */
 
 body{
 font-family:    arial, Helvetica, sans-serif;
-background:     #3399dd;
+background:     #000;
 padding:        0;
 color:          #cccccc;
     }
@@ -20,13 +20,21 @@ display:        block;
 }
 
 /* -----FORM -----*/
-
 #myForm
 {
-Width:          450px;
-height:         265px;
+width:          450px;
+height:         250px;
 background:     #e3dfdf;
-color:           #3399dd;
+color:           #000;
+margin:         0 auto;
+padding:        10px;
+}
+#myForm1
+{
+width:          450px;
+height:         auto;
+background:     #e3dfdf;
+color:           #000;
 margin:         0 auto;
 padding:        10px;
 }
@@ -59,6 +67,6 @@ width:          75px;
 
 .lineBttom{}
 .registerTxt1{float:left;font-size: 13px;}
-.registerTxt1 a{color:#3399dd; }
+.registerTxt1 a{color:#000; }
 .registerTxt2{float:right;font-size: 13px;}
-.registerTxt2 a{color:#3399dd; }
+.registerTxt2 a{color:#000; }
