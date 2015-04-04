@@ -1,8 +1,28 @@
-<?php include_once("connection/db.php");?>
-<?php include_once("includes/head.php");?>
+<?php 
+session_start();
+include_once("connection/db.php");
+include_once("includes/head.php");
+if(isset($_POST['username']))
+{
+$username = mysqli_real_escape_string($connection, $_POST['username']);
+$password = md5($_POST['password']); 
+$query =    "SELECT * FROM users WHERE username ='$username' AND password ='$password'";
+$result = mysqli_query($connection, $query);
+$count = mysqli_num_rows($result);
+if($count == 0)
+{
+	echo "<p style='color:red; text-align:center;'>Incorrect password</p>";
+}
+elseif($count == 1)
+{
+	$_SESSION['username'] = $username;
+	header("Location:login.php");
+} 
+}
+?>
     <body>
        <div id="loginCOntent">
-            <form action="index.php" method="POST" id="myForm">
+            <form action="<?php echo $_SERVER['PHP_SELF'];?>" method="POST" id="myForm">
                 <h3>Sign in</h3>
                     <hr/>
                         <label for="username">Username</label><br/>

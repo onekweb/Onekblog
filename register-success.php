@@ -3,9 +3,9 @@
     <body>
        <div id="loginCOntent">
             <form action="#" method="POST" id="myForm1">
-                <h3>Yeahhhhhhhhhhh!</h3>
+                <h3 style="color:'#000'">Welcome to our register</h3>
                     <hr/>
-                     	<h4 style="color:#000;">The list of our member..</h4>
+                     	<h5 style="color:#000; text-align:'center;'">The list of our member</h5>
                      	<table>
                      		<?php 
 							$query = "SELECT * FROM users";

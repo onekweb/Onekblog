@@ -10,6 +10,7 @@ if(isset($_POST['username']))
 	$mail = mysqli_real_escape_string($connection, $_POST['email']);			
 	$queryselect = "SELECT * FROM users WHERE username = '$username'";
 	$result = mysqli_query($connection, $queryselect);
+	$errormsg = NULL;
 		if(mysqli_num_rows($result)==0)
 		{
 		$queryinsert = "INSERT INTO users (username, password, mail) VALUES ('$username', '$password', '$mail')";
@@ -17,8 +18,17 @@ if(isset($_POST['username']))
 		header("Location: register-success.php");									
 		}else
 		{
-		echo "Usename ".$username." is alreday exists";	
+			echo "<p style='color:red; text-align:center;'>The username exists</p>";	
 		} 	 
+	}elseif(empty($_POST['username']))
+	{
+		echo"<p style='color:red; text-align:center;'>Please fill the username</p>" ;
+	}elseif(empty($_POST['email']))
+	{
+		echo"<p style='color:red; text-align:center;'>Please fill email adress</p>" ;		
+	}elseif(empty($_POST['password']))
+	{
+		echo"<p style='color:red; text-align:center;'>Please fill the password</p>" ;		
 	}
 }
 ?>
